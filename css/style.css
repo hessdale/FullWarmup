@@ -1,0 +1,75 @@
+#logo {
+  color: rgb(182, 182, 182);
+}
+
+header {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 2fr));
+  justify-items: center;
+  align-items: center;
+}
+header > #nav {
+  display: none;
+}
+
+@media only screen and (min-width: 1020) {
+  header > #nav {
+    display: block;
+  }
+  header > img {
+    display: none;
+  }
+}
+footer {
+  background-color: #333333;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-items: center;
+  align-items: center;
+  display: grid;
+  min-height: 15vh;
+  text-align: center;
+}
+
+* {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 2px;
+  line-height: 30px;
+}
+
+body {
+  display: grid;
+}
+
+#care {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+#care * {
+  margin-top: 10px;
+}
+
+#pet_title {
+  font-size: 40px;
+}
+
+#read_more {
+  background-color: #f1c50e;
+}
+
+#doggy {
+  background-color: #f1c50e;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-items: center;
+  align-items: center;
+  min-height: 500px;
+  margin-top: 30px;
+}
+
+/*# sourceMappingURL=style.css.map */

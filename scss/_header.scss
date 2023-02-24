@@ -1,0 +1,27 @@
+#logo {
+    color: rgb(182, 182, 182);
+}
+
+
+header {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 2fr));
+    justify-items: center;
+    align-items: center;
+
+    >#nav {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1020) {
+    header {
+        >#nav {
+            display: block;
+        }
+
+        >img {
+            display: none;
+        }
+    }
+}
